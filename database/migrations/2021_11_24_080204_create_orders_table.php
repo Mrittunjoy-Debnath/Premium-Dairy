@@ -18,6 +18,8 @@ class CreateOrdersTable extends Migration
             $table->string('product_name');
             $table->integer('product_price');
             $table->integer('quantity');
+            $table->integer('total_bill');
+            $table->integer('total_qty');
             $table->string('name');
             $table->string('phone');
             $table->string('address');

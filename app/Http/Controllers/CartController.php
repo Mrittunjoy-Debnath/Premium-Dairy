@@ -61,6 +61,7 @@ class CartController extends Controller
                 'count_total' =>$count_total,
                 'datas' => $datas,
                 'data2' =>$data2,
+                'user_id' => $id,
             ]);
         }
         else

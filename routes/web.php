@@ -40,6 +40,8 @@ Route::group(['prefix'=>'admin','middleware' => 'is_admin'],function(){
 
     //Order
     Route::get('/showorders','Admin\OrderController@showOrders')->name('show-orders');
+    Route::get('/orderdone/{phone}','Admin\OrderController@orderDone')->name('order-done');
+    Route::get('/downloadpdf/{phone}','Admin\OrderController@downloadPdf')->name('download-pdf');
 
     //Search
     Route::post('/search','Admin\SearchController@search')->name('search');

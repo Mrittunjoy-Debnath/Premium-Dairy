@@ -91,7 +91,7 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
             <hr>
-            <p class="text-start"><small>Milky is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.Milky is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.</small></p>
+            <p class="text-start  text-justify"><small>Milky is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.Milky is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.</small></p>
           </div>
           <!--Grid column-->
 

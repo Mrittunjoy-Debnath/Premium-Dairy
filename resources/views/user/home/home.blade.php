@@ -42,96 +42,9 @@
 
                 </div>
             </div>
-
             </form>
-
         </div>
-
-
         @endforeach
-
-        {{-- <div class="col-md-4">
-            <div class="card m-2" >
-                <img src="{{ asset('img/2.jpg') }}" class="card-img-top" alt="..." style="height: 200px;">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card m-2">
-                <img src="{{ asset('img/1.jpg') }}" class="card-img-top" alt="..." style="height: 200px;">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card m-2" >
-                <img src="{{ asset('img/1.jpg') }}" class="card-img-top" alt="..." style="height: 200px;">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card m-2">
-                <img src="{{ asset('img/1.jpg') }}" class="card-img-top" alt="..." style="height: 200px;">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card m-2">
-                <img src="{{ asset('img/1.jpg') }}" class="card-img-top" alt="..." style="height: 200px;">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card m-2">
-                <img src="{{ asset('img/1.jpg') }}" class="card-img-top" alt="..." style="height: 200px;">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">Go somewhere</a>
-                </div>
-            </div>
-        </div> --}}
-        {{-- <div class="col-md-4">
-            <img src="{{ asset('img/1.jpg') }}" alt="img" height="200px" width="100%" class="m-1"/>
-            <p class="">How are you</p>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('img/2.jpg') }}" alt="img" height="300px" width="100%" class="m-1"/>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('img/3.jpg') }}" alt="img" height="300px" width="100%" class="m-1"/>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('img/3.jpg') }}" alt="img" height="300px" width="100%" class="m-1"/>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('img/3.jpg') }}" alt="img" height="300px" width="100%" class="m-1"/>
-        </div>
-        <div class="col-md-4">
-            <img src="{{ asset('img/3.jpg') }}" alt="img" height="300px" width="100%" class="m-1"/>
-        </div> --}}
     </div>
 </div>
 @endsection

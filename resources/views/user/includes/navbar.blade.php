@@ -70,8 +70,8 @@
 
                             @if(Auth::user())
 
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="{{ route('show-cart',Auth::user()->id) }}">Cart[ {{ $count_total }} ]</a>
+                            <li class="nav-item bg-danger">
+                                <a class="nav-link text-white" href="{{ route('show-cart',Auth::user()->id) }}"><i class="fas fa-shopping-cart">Cart[ {{ $count_total }} ]</i></a>
                             </li>
 
                             <li class="nav-item ">
