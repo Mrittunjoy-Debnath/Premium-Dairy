@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/e2f084b271.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
-<body>
+<body onload="return see()">
 
     @include('user.includes.navbar')
 
