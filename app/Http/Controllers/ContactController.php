@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
-
+use App\Offer;
 class ContactController extends Controller
 {
     public function index()
@@ -33,9 +33,16 @@ class ContactController extends Controller
 
     public function offer()
     {
+        $products = Offer::all();
+
         return view('user.offer.offer',[
+            'products' => $products,
             'count_total' => '0',
         ]);
+
+        // return view('user.offer.offer',[
+        //     'count_total' => '0',
+        // ]);
     }
 
 }

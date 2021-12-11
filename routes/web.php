@@ -42,6 +42,17 @@ Route::group(['prefix'=>'admin','middleware' => 'is_admin'],function(){
     Route::get('/showorders','Admin\OrderController@showOrders')->name('show-orders');
     Route::get('/orderdone/{phone}','Admin\OrderController@orderDone')->name('order-done');
     Route::get('/downloadpdf/{phone}','Admin\OrderController@downloadPdf')->name('download-pdf');
+    Route::get('/ordermove/{phone}','Admin\OrderController@orderMove')->name('order-move');
+    Route::get('/doneorder','Admin\OrderController@doneOrder')->name('done-order');
+    Route::get('/ordermovedone/{phone}','Admin\OrderController@orderMoveDone')->name('order-move-done');
+    Route::get('/ordermovedelete/{phone}','Admin\OrderController@orderMoveDelete')->name('order-move-delete');
+
+
+    // Offer
+    Route::get('/addoffer','Admin\OfferController@addOffer')->name('add-offer');
+    Route::post('/saveproductoffer','Admin\OfferController@saveProductOffer')->name('save-product-offer');
+
+    Route::get('/manageoffer','Admin\OfferController@manageOffer')->name('manage-offer');
 
     //Search
     Route::post('/search','Admin\SearchController@search')->name('search');
@@ -69,7 +80,7 @@ Route::get('/offer','ContactController@offer')->name('offer');
 Route::post('/addcart/{id}','CartController@addCart')->name('add-cart')->middleware('auth');
 Route::get('/showcart/{id}','CartController@showCart')->name('show-cart')->middleware('auth');
 Route::get('/remove/{id}','CartController@removeCart')->name('remove')->middleware('auth');
-
+Route::post('/addoffercart/{id}','CartController@addOfferCart')->name('add-offer-cart')->middleware('auth');
 //Order
 Route::post('/orderconfim','OrderController@orderConfirm')->name('order-confirm');
 

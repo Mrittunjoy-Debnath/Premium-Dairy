@@ -3,36 +3,36 @@
     <!-- Grid container -->
     <div class="container-fluid p-4 mt-5">
       <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/PremiumDairyBD" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/PremiumDairyBD" role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
 
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+            ></a>
 
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-        ></a>
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+            ></a>
 
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
 
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+            ></a>
 
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+            ></a>
       </section>
       <!-- Section: Social media -->
 
@@ -91,21 +91,21 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Links</h5>
             <hr>
-            <p class="text-start  text-justify"><small>Milky is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.Milky is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.</small></p>
+            <p class="text-start  text-justify"><small>Premium Dairy is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.Premium Dairy is an E-Commerce in Bangladesh. We promptly deliver at home with a huge variety of daily essential Grocery, Organic, Traditional, Homemade & Local Food & Lifestyle Products.</small></p>
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Milky Bangladesh</h5>
+            <h5 class="text-uppercase">Premium Dairy</h5>
 <hr>
               <p class="text-start"><small>We’d love to hear from you. Here’s how you can reach us.</small></p>
 
-              <p class="text-start"><small>Address: 24/7, Pallabi, Mirpur, Dhaka</small></p>
+              <p class="text-start"><small>Address: Ghatpar, Basundhara, Dhaka</small></p>
 
-              <p class="text-start"><small>Hotline: +880 1973 524035</small></p>
+              <p class="text-start"><small>Hotline: +8801747630403 </small></p>
 
-              <p class="text-start"><small>Email: milkybd1@gmail.com</small></p>
+              <p class="text-start"><small>Email: contact@premiumdairybd.com</small></p>
           </div>
           <!--Grid column-->
 
@@ -142,7 +142,8 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         Copyright: © 2020 Primium Dairy | Designed By
-      <a class="fw-bold text-success" href="https://www.facebook.com/mrittunjoy.debnath.12">Mrittunjoy Debnath</a>
+      <a class="fw-bold text-success" href="https://www.facebook.com/mrittunjoy.debnath.12">Mrittunjoy Debnath </a><small> (01986126112)</small><br>
+      <a class="text-white" href="https://m-joy.xyz/">Portfolio of Mrittunjoy Debnath</a>
     </div>
     <!-- Copyright -->
   </footer>

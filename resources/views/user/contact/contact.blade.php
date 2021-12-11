@@ -17,7 +17,7 @@
                 <p class="text-center">Interested in our products? Just pick up the phone and call us.</p>
                 <div class="text-center">
                     <a href="tel:+8801973524035" target="_self" class="btn btn-success">
-                        <span class="text-center">+880 1973 524035</span>
+                        <span class="text-center">+880 1747 630403</span>
                       </a>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <p class="text-center">Interested in our products? Just pick up the phone and call us.</p>
                 <div class="text-center">
                     <a href="tel:+8801973524035" target="_self" class="btn btn-success">
-                        <span class="text-center">+880 1973 524035</span>
+                        <span class="text-center">+880 1845 377287</span>
                       </a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 <p class="text-center">If you need a little help. Don’t worry, We’re here for you.</p>
                 <div class="text-center">
                     <a href="tel:+8801973524035" target="_self" class="btn btn-success">
-                        <span class="text-center">+880 1973 524035</span>
+                        <span class="text-center">+880 1676 050643</span>
                       </a>
                 </div>
             </div>
@@ -81,15 +81,17 @@
                             <div class="col-sm-12">
                                 <textarea name="customer_feedback" class="form-control" placeholder="Your Feedback (required)" rows="5"></textarea>
                                 <span class="text-danger"> {{$errors->has('customer_feedback') ? $errors->first('customer_feedback'):''}} </span>
+
                             </div>
+                            <input type="submit" class="btn btn-success mt-2 btn-block" value="SEND">
                         </div>
-                        <input type="submit" class="btn btn-success mt-2" value="SEND">
+
                     </div>
                 </form>
                 </div>
             </div>
             <div class="col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14599.686912649557!2d90.42323288491633!3d23.821382207803396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64c103a8093%3A0xd660a4f50365294a!2z4Kao4Kaw4KeN4KalIOCmuOCmvuCmieCmpSDgpofgpongpqjgpr_gpq3gpr7gprDgp43gprjgpr_gpp_gpr8!5e0!3m2!1sbn!2sbd!4v1633836580580!5m2!1sbn!2sbd" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14599.686912649557!2d90.42323288491633!3d23.821382207803396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64c103a8093%3A0xd660a4f50365294a!2z4Kao4Kaw4KeN4KalIOCmuOCmvuCmieCmpSDgpofgpongpqjgpr_gpq3gpr7gprDgp43gprjgpr_gpp_gpr8!5e0!3m2!1sbn!2sbd!4v1633836580580!5m2!1sbn!2sbd" width="100%" height="415" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>

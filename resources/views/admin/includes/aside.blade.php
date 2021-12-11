@@ -90,14 +90,37 @@
                 >
               </li>
               <li class="sidebar-item">
-                <a href="{{ route('manage-product') }}" class="sidebar-link"
+                <a href="{{ route('done-order') }}" class="sidebar-link"
                   ><i class="mdi mdi-note-plus"></i
-                  ><span class="hide-menu"> Manage Order </span></a
+                  ><span class="hide-menu"> Done Order </span></a
                 >
               </li>
             </ul>
           </li>
 
+          <li class="sidebar-item">
+            <a
+              class="sidebar-link has-arrow waves-effect waves-dark"
+              href="javascript:void(0)"
+              aria-expanded="false"
+              ><i class="mdi mdi-receipt"></i
+              ><span class="hide-menu">Offer </span></a
+            >
+            <ul aria-expanded="false" class="collapse first-level">
+              <li class="sidebar-item">
+                <a href="{{ route('add-offer') }}" class="sidebar-link"
+                  ><i class="mdi mdi-note-outline"></i
+                  ><span class="hide-menu"> Add Offer </span></a
+                >
+              </li>
+              <li class="sidebar-item">
+                <a href="{{ route('manage-offer') }}" class="sidebar-link"
+                  ><i class="mdi mdi-note-plus"></i
+                  ><span class="hide-menu"> Manage Offer </span></a
+                >
+              </li>
+            </ul>
+          </li>
 
         </ul>
       </nav>

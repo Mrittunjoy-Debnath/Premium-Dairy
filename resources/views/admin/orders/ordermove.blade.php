@@ -49,8 +49,8 @@
                                         <td>{{ $data->product_price * $data->quantity }}$</td>
                                         <td>{{ $data->total_bill }}</td>  --}}
                                         <td>
-                                            <a class="mx-3" href="{{ route('order-done',['phone'=>$data->phone]) }}">Show pdf</a>
-                                            <a class="mx-3" href="{{ route('order-move',['phone'=>$data->phone]) }}">Done</a>
+                                            <a class="mx-3" href="{{ route('order-move-done',['phone'=>$data->phone]) }}">Show pdf</a>
+                                            <a class="mx-3" href="{{ route('order-move-delete',['phone'=>$data->phone]) }}">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
