@@ -42,6 +42,7 @@ Route::group(['prefix'=>'admin','middleware' => 'is_admin'],function(){
     Route::get('/showorders','Admin\OrderController@showOrders')->name('show-orders');
     Route::get('/orderdone/{phone}','Admin\OrderController@orderDone')->name('order-done');
     Route::get('/downloadpdf/{phone}','Admin\OrderController@downloadPdf')->name('download-pdf');
+    Route::get('/ordermovedownloadpdf/{phone}','Admin\OrderController@orderMoveDownloadPdf')->name('order-move-download-pdf');
     Route::get('/ordermove/{phone}','Admin\OrderController@orderMove')->name('order-move');
     Route::get('/doneorder','Admin\OrderController@doneOrder')->name('done-order');
     Route::get('/ordermovedone/{phone}','Admin\OrderController@orderMoveDone')->name('order-move-done');

@@ -57,11 +57,21 @@ class OrderController extends Controller
         $data = Order::where('phone','=',$phone)
         ->get();
 
+        $grand_total=0;
+
         foreach($data as $data2)
         {
             $name = $data2->name;
             $address = $data2->address;
-            $grand_total = $data2->total_bill;
+
+            if($grand_total==$data2->total_bill)
+            {
+                $grand_total = $data2->total_bill;
+            }
+            else
+            {
+                $grand_total += $data2->total_bill;
+            }
         }
 
         $pdf = PDF::loadView('admin.orders.orderdownload',[
@@ -74,6 +84,43 @@ class OrderController extends Controller
         return $pdf->download('invoice.pdf');
 
     }
+    //order move download
+
+    public function orderMoveDownloadPdf($phone)
+    {
+        $data = Ordermove::where('phone','=',$phone)
+        ->get();
+
+        $grand_total=0;
+
+        foreach($data as $data2)
+        {
+            $name = $data2->name;
+            $address = $data2->address;
+
+            if($grand_total==$data2->total_bill)
+            {
+                $grand_total = $data2->total_bill;
+            }
+            else
+            {
+                $grand_total += $data2->total_bill;
+            }
+        }
+
+        $pdf = PDF::loadView('admin.orders.orderdownload',[
+            'data'=>$data,
+            'name' => $name,
+            'phone'=>$phone,
+            'address' =>$address,
+            'grand_total' =>$grand_total,
+        ]);
+        return $pdf->download('invoice.pdf');
+
+    }
+
+    //order move download
+
     public function orderMove($phone)
     {
         $data = Order::where('phone','=',$phone)
@@ -114,11 +161,21 @@ class OrderController extends Controller
         $data = Ordermove::where('phone','=',$phone)
         ->get();
 
+        $grand_total = 0;
+
         foreach($data as $data2)
         {
             $name = $data2->name;
             $address = $data2->address;
-            $grand_total = $data2->total_bill;
+            if($grand_total==$data2->total_bill)
+            {
+                $grand_total = $data2->total_bill;
+            }
+            else
+            {
+                $grand_total += $data2->total_bill;
+            }
+
         }
 
         return view('admin.orders.ordermovedone',[

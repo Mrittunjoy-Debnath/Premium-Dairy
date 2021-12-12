@@ -66,7 +66,7 @@
                                         @endforeach
                                         <tr>
                                             <td class="bg-success text-white text-center fw-bold" colspan="4">Total bill: {{ $grand_total }}</td>
-                                            <td class="bg-success"><a class="text-white" href="{{ route('download-pdf',['phone'=>$data->phone]) }}">Download</a></td>
+                                            <td class="bg-success"><a class="text-white" href="{{ route('order-move-download-pdf',['phone'=>$data->phone]) }}">Download</a></td>
                                         </tr>
                                         </tbody>
 
