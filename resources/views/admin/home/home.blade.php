@@ -36,10 +36,11 @@
       <div class="col-md-6 col-lg-3">
         <div class="card card-hover">
           <div class="box bg-cyan text-center">
-            <h1 class="font-light text-white">
-              <i class="mdi mdi-view-dashboard"></i>
+            <h1 class="font-light text-white fw-bold">
+              {{-- <i class="mdi mdi-view-dashboard"></i> --}}
+              {{ $total_user }}
             </h1>
-            <h6 class="text-white">Dashboard</h6>
+            <h6 class="text-white">Total User</h6>
           </div>
         </div>
       </div>
@@ -47,10 +48,11 @@
       <div class="col-md-6 col-lg-3">
         <div class="card card-hover">
           <div class="box bg-success text-center">
-            <h1 class="font-light text-white">
-              <i class="mdi mdi-chart-areaspline"></i>
+            <h1 class="font-light text-white fw-bold">
+              {{-- <i class="mdi mdi-chart-areaspline"></i> --}}
+              {{ $total_product }}
             </h1>
-            <h6 class="text-white">Charts</h6>
+            <h6 class="text-white">Total Products</h6>
           </div>
         </div>
       </div>
@@ -58,10 +60,11 @@
       <div class="col-md-6 col-lg-3">
         <div class="card card-hover">
           <div class="box bg-warning text-center">
-            <h1 class="font-light text-white">
-              <i class="mdi mdi-collage"></i>
+            <h1 class="font-light text-white fw-bold">
+              {{-- <i class="mdi mdi-collage"></i> --}}
+              {{ $product_orders }}
             </h1>
-            <h6 class="text-white">Widgets</h6>
+            <h6 class="text-white">Total Order Product Item </h6>
           </div>
         </div>
       </div>
@@ -70,9 +73,10 @@
         <div class="card card-hover">
           <div class="box bg-danger text-center">
             <h1 class="font-light text-white">
-              <i class="mdi mdi-border-outside"></i>
+              {{-- <i class="mdi mdi-border-outside"></i> --}}
+              {{ $count_order }}
             </h1>
-            <h6 class="text-white">Tables</h6>
+            <h6 class="text-white">Count Orders</h6>
           </div>
         </div>
       </div>

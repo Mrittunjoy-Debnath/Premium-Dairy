@@ -16,7 +16,7 @@
 
         <div class="row">
             <div class="col-md-12 col-sm-12 rnav" id="fixedbar">
-                <nav class="navbar navbar-expand-lg navbar-light bg-success " id="fixednav">
+                <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-success " id="fixednav">
                     <div class="container-fluid">
                         {{-- <div class="row"> --}}
                             @auth
