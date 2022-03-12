@@ -84,4 +84,4 @@ Route::get('/remove/{id}','CartController@removeCart')->name('remove')->middlewa
 Route::post('/addoffercart/{id}','CartController@addOfferCart')->name('add-offer-cart')->middleware('auth');
 //Order
 Route::post('/orderconfim','OrderController@orderConfirm')->name('order-confirm');
-
+Route::get('/productdesc/{id}/{count_total}','OrderController@productDesc')->name('product-desc');

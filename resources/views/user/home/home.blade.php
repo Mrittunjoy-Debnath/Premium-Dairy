@@ -5,6 +5,39 @@
 @include('user.includes.header')
 
 <div class="container-fluid" >
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "263924588815819");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v13.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
     <div class="row">
         <hr>
         <div class="col-md-4 mx-auto">
@@ -25,8 +58,8 @@
 
         <div class="col-md-4">
 
-            <form action="{{route('add-cart',$product->id)}}" method="post">
-            @csrf
+            {{-- <form action="{{route('product-desc',$product->id)}}" method="post">
+            @csrf --}}
 
             <div class="card mx-2 mt-3" >
                 <img src="{{ asset($product->product_image) }}" class="card-img-top" alt="..." style="height: 200px;">
@@ -34,11 +67,11 @@
                 <h5 class="card-title">{{ $product->product_name }}</h5>
                 <p class="card-text">{{ $product->product_description }}</p>
                 <p class="card-text">{{ $product->product_price }}</p>
-                {{-- <a href="#" class="btn btn-success">Go somewhere</a> --}}
-                <input type="integer" name="quantity" min="1" value="1" style="width: 80px">
+                <a href="{{ route('product-desc',['id'=>$product->id,'count_total'=>$count_total]) }}" class="btn btn-success ">Buy to click</a>
+                {{-- <input type="integer" name="quantity" min="1" value="1" style="width: 80px">
                 <input type="submit" value="add cart" >
                 <br>
-                <span class="text-danger"> {{$errors->has('quantity') ? $errors->first('quantity'):''}} </span>
+                <span class="text-danger"> {{$errors->has('quantity') ? $errors->first('quantity'):''}} </span> --}}
 
                 </div>
             </div>

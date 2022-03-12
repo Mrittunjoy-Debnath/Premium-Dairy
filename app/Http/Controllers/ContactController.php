@@ -107,9 +107,31 @@ class ContactController extends Controller
     {
         $products = Offer::all();
 
+        $count_total = 0;
+        if(Auth::id())
+    {
+        $id = Auth::id();
+        // $datas = User::where('user_id',$id)->join('carts','users.id','=','carts.user_id')->get();
+        // $phone = $datas->phone;
+
+        $cart = Cart::all();
+
+        foreach($cart as $cart)
+        {
+            if($cart->user_id == $id)
+            {
+                $count_total = $count_total+1;
+            }
+            else
+            {
+                $count_total = $count_total +0;
+            }
+        }
+    }
+
         return view('user.offer.offer',[
             'products' => $products,
-            'count_total' => '0',
+            'count_total' => $count_total,
         ]);
 
         // return view('user.offer.offer',[

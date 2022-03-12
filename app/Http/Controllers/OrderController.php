@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Order;
 use App\Cart;
+use App\Product;
 use Illuminate\Support\Facades\DB;
 class OrderController extends Controller
 {
@@ -58,4 +59,16 @@ class OrderController extends Controller
 
     }
 
+    //product desc
+
+    public function productDesc($id,$count_total)
+    {
+        $products = Product::find($id);
+        // $count_total = Cart::where('user_id',$id)->count();
+        // dd($count_total);
+        return view('user.home.productdesc',[
+            'product' => $products,
+            'count_total' => $count_total,
+        ]);
+    }
 }
